@@ -163,9 +163,3 @@ with open ('results.txt','r') as file:
 
 with open ('results.txt','w') as inf:
         inf.writelines([key+' '+dict_rating[key]+'\n' for key in dict_rating.keys()])
-
-
-    
-
-    
-
