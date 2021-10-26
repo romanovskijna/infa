@@ -39,7 +39,6 @@ class Bublik:
         self.y = self.y + self.Vy
         if self.x > A - self.r or self.x < self.r:
             self.Vx = - self.Vx
-
         if self.y > B - self.r or self.y < self.r:
             self.Vy = - self.Vy
 
@@ -145,6 +144,7 @@ with open ('results.txt','r') as file:
         dict_rating.update({line[0]: line[1]})
         dict_rating.items()
         sorted_tuple = sorted(dict_rating.items(), key = lambda x: x[1], reverse = True)
+        print (sorted_tuple)
         dict_rating = dict(sorted_tuple)
 
 with open ('results.txt','w') as inf:
